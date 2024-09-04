@@ -1,0 +1,21 @@
+ifconfig
+ping <Tom's_IP>   # From Tina's laptop
+ping <Tina's_IP>  # From Tom's laptop
+sudo apt install openssh-server  # Ubuntu
+sudo yum install openssh-server  # CentOS
+ssh <username>@<Tom's_IP>
+scp <file_path> <username>@<Tom's_IP>:/destination_path
+sftp <username>@<Tom's_IP>
+sudo apt install vsftpd
+sudo systemctl start vsftpd
+ftp <Tom's_IP>
+sudo apt install wireshark  # Ubuntu
+sudo yum install wireshark  # CentOS
+wireshark
+sudo tcpdump -i <interface>
+netstat -tuln
+sudo ufw allow <port_number>
+sudo ufw reload
+sudo firewall-cmd --add-port=<port_number>/tcp --permanent
+sudo firewall-cmd --reload
+sudo ufw limit ssh/tcp
